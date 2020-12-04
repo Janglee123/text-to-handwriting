@@ -29,11 +29,13 @@ function applyPaperStyles() {
   if (document.querySelector('#page-effects').value === 'scanner') {
     // For scanner, we need shadow between 50deg to 120deg only
     // Since If the lit part happens to be on margins, the margins get invisible
-    overlayEl.style.background = `linear-gradient(${Math.floor(Math.random() * (120 - 50 + 1)) + 50
-      }deg, #0008, #0000)`;
+    overlayEl.style.background = `linear-gradient(${
+      Math.floor(Math.random() * 10) + 80
+    }deg, #0008, #0000)`;
   } else if (document.querySelector('#page-effects').value === 'shadows') {
-    overlayEl.style.background = `linear-gradient(${Math.random() * 360
-      }deg, #0008, #0000)`;
+    overlayEl.style.background = `linear-gradient(${
+      Math.random() * 20 - 10 + 90
+    }deg, #0008, #0000)`;
   }
 
   if (isFontErrory() && document.querySelector('#font-file').files.length < 1) {
