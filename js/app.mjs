@@ -9,6 +9,7 @@ import {
   deleteAll
 } from './generate-images.mjs';
 import { setInkColor, toggleDrawCanvas } from './utils/draw.mjs';
+import { applyNoise } from './utils/noise.mjs';
 
 /**
  *
@@ -101,6 +102,13 @@ const EVENT_MAP = {
       toggleDrawCanvas();
     }
   },
+
+  '#apply-noise-button': {
+    on: 'click',
+    action: () => {
+      applyNoise();
+    }
+  },
   '.draw-container .close-button': {
     on: 'click',
     action: () => {
@@ -184,3 +192,5 @@ fetch(
       )
       .join('');
   });
+
+

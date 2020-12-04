@@ -214,7 +214,21 @@ body.dark .github-corner {
 .paper-content {
   margin: 10px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
 }
+
+.word-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
 .page-a.lines .paper-content {
   background-image: linear-gradient(#999 0.05em, transparent 0.1em);
   background-color: unset !important;
